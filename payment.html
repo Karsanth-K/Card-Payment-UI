@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Payment</title>
+    <link href="payment.css" rel="stylesheet">
+</head>
+<body>
+    <h1 id="title">CARD PAYMENT</h1>
+    <div id="payment_window">
+        <div id="card_display">
+            <img src="Images/sticker.jpg" style="position: absolute; width: 25px;margin:20px 100px;border-radius: 7px;">
+            <h2>CARD
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/cb/Rupay-Logo.png" id="rupay" style="width: 100px;">
+            </h2>
+            <div id="display_contents">
+                <p id="display_card_number">################</p>
+                <div id="display_card_holder_div">
+                    Card Holder <p id="display_card_holder"></p>
+                </div>
+                <div id="display_card_expires_div">
+                    Expires<p id="display_card_expires"><span id="mm">mm</span>/<span id="yy">yyyy</span></p>
+                </div>
+            </div>
+        </div>
+        <div id="card_display_back">
+            <h2>CARD</h2>
+            <div id="back_strip"></div>
+            <div id="cvv_disp_div">
+                <strong>CVV</strong>
+                <p id="cvv_disp">xxx</p>
+            </div>
+        </div>
+        <div id="card_details">
+            <div id="left_right">
+                <div id="left">
+                    <div id="number">
+                        Card Number
+                    </div>
+                    <div id="holder_name_div">
+                        Card Holder Name
+                    </div>
+                </div>
+                <div id="right">
+                    <input type="number" id="card_number" max="9999999999999999" title="Enter card number">
+                    <input type="text" id="holder_name" maxlength="20" title="Enter card holder name">
+                </div>
+            </div>  
+            <div id="bottom">
+                <div id="expiration">
+                    Card Validity
+                    <small>Expiration (mm/yy)</small>
+                    <div id="exp_inp">
+                        <input type="number" min="1" max="12" id="exp_month" title="Expiration month">
+                        <input type="number" min="2023" max="3000" id="exp_year" title="Expiration year">
+                    </div>
+                </div>
+                <div id="cvv_div">
+                    CVV
+                    <input type="number" id="cvv" title="CVV">
+                </div>
+            </div>
+        </div>
+        <button id="submit">SUBMIT</button>
+    </div>
+    <script src="payment.js"></script>
+</body>
+</html>

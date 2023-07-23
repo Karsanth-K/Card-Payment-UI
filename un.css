@@ -1,0 +1,28 @@
+#card_display_back{
+    margin: auto;
+    width: 450px;
+    height: 225px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.664);
+    background: linear-gradient(45deg,antiquewhite,burlywood );
+    user-select: none;
+    transition: all 500ms;
+}
+#card_display_back h2{
+    color: white;
+    padding: 20px;
+    text-shadow: 0 0 10px black;
+}
+#card_display_back #back_strip{
+    height: 50px;
+    background-color: black;
+}
+#card_display_back #cvv_div{
+    text-align: right;
+    margin-top: 10px;
+    margin-right: 25px;
+}
+#card_display_back #cvv{
+    margin: 5px;
+    font-size: small;
+}
